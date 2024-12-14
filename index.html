@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="programador, creativo, intuitivo">
+  <meta name="description" content="No más de 165 caracteres">
+  <meta name="author" content="Mario Gallardo">
+  <title>Portafolio</title>
+  <link rel='shortcut icon' href=" assets/img/logo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode" />
+  <!-- <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=light_mode" /> -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <div class="navbar__toggles flex--container">
+
+    <button id="homeButton">Home</button>
+
+
+
+
+</head>
+
+<body>
+
+  <label for="toggle" id="label_toggle"><span class="material-symbols-outlined">
+      dark_mode
+    </span></label>
+  <input type="checkbox" id="toggle">
+  <script src="assets/js/components/darkmode.js"></script>
+
+
+  <div class="navbar__toggle--language flex--container">
+    <input type="checkbox" id="language-toggle" class="navbar__toggle--language-input" />
+    <label for="language-toggle" class="navbar__toggle--language-label">
+      <span class="language-icon">ES/EN</span>
+    </label>
+  </div>
+  </div>
+
+
+  <!-- Loader -->
+  <div class="loader">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237 268" class="loader__logo">
+      <path fill="currentColor"
+        d="M108.473 2.81055C114.675 -0.783262 122.325 -0.783265 128.527 2.81055L226.74 59.7212C232.912 63.298 236.712 69.8919 236.712 77.0259V190.974C236.712 198.108 232.912 204.702 226.74 208.279L128.527 265.189C122.325 268.783 114.675 268.783 108.473 265.189L10.2601 208.279C4.08755 204.702 0.287529 198.108 0.287529 190.974V77.0259C0.287529 69.8919 4.08754 63.298 10.2601 59.7212L108.473 2.81055Z">
+      </path>
+    </svg>
+  </div>
+
+  <header class="header" style="display: none;">
+
+
+    <nav class="navbar grid--container flex--container">
+      <a class="navbar__logo flex--container" href="#"><i class="bx bxs-registered"></i>Mario</a>
+
+      <div id="nav" class="navbar__menu">
+        <a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
+
+        <ul class="navbar__list flex--container">
+          <li class="navbar__item">
+            <a class="navbar__link active" href="#home">Inicio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#about">Acerca de Mí</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills">Habilidades</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects">Portafolio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navbar__toggles flex--container">
+        <div class="navbar__toggle--darkmode flex--container">
+          <input type="checkbox" name="color-scheme" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+            <i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+            <i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
+          </label>
+        </div>
+        <div class="navbar__toggle--language flex--container">
+          <input type="checkbox" name="language-toggle" id="language-toggle" class="navbar__toggle--language-input" />
+          <label for="language-toggle" class="navbar__toggle--language-label"></label>
+        </div>
+      </div>
+      <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="home">
+      <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
+      <i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
+      <i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
+      <i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
+      <i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
+      <i class="bx bxl-tailwind-css home__layer home__layer--6" data-speed="-2"></i>
+      <i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
+      <i class="bx bxl-typescript home__layer home__layer--8" data-speed="-2"></i>
+      <i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
+      <i class="bx bxl-graphql home__layer home__layer--10" data-speed="-7"></i>
+      <i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5"></i>
+
+
+      <div class="home__container grid--container">
+        <div class="home__image">
+          <img src="assets/img/profile.png" alt="profile photo" title="Mario" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="profile-details">
+    <ul class="home__social">
+      <li class="home__social-item">
+        <a class="home__social-link" href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      </li>
+      <li class="home__social-item">
+        <a class="home__social-link" href="#" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+      </li>
+      <li class="home__social-item">
+        <a class="home__social-link" href="#" target="_blank"><i class="bx bxl-github"></i></a>
+      </li>
+      <li class="home__social-item">
+        <a class="home__social-link" href="#" target="_blank"><i class="bx bx-envelope"></i></a>
+      </li>
+    </ul>
+
+    <div class="home__info">
+      <h1 class="home__title">Hey, soy Mario</h1>
+      <p class="home__description">
+        Soy desarrollador web, apasionado por la tecnología y la programación.
+      </p>
+    </div>
+
+    <div class="home__buttons">
+      <a class="btn btn--primary" href="assets/MarioGallardoCV.pdf" download="MarioGallardo_CV">Descargar CV</a>
+    </div>
+  </section>
+
+
+  <section id="about" class="about section">
+    <h2 class="section__title">Acerca de Mí</h2>
+
+    <div class="about__container grid--container">
+      <p class="about__description">
+        ¡Hola! Soy el mago del teclado que convierte café en código—algunas veces incluso funciona! Me especializo en
+        hablarle más fluido a las computadoras que a personas y me divierto luchando contra bugs feroces como un
+        guerrero de Stack Overflow de noche. ¿Necesitas magia en JS o CSS? Estoy a un git commit de distancia.
+      </p>
+
+      <div class="about__cards flex--container">
+        <!--Card 1 -->
+        <div class="about__card">
+          <img class="about__card--img" src="assets/img/me_1.png" alt="Laborando como ingeniero"
+            title="Laborando como programador" />
+        </div>
+        <!--Card 2 -->
+        <div class="about__card">
+          <img class="about__card--img" src="assets/img/me_2.jpg" alt="Laborando como diseñador"
+            title="Laborando como diseñador" />
+        </div>
+        <!--Card 3 -->
+        <div class="about__card">
+          <img class="about__card--img" src="assets/img/me_3.jpg" alt="Trabajando en equipo"
+            title="Trabajando en equipo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills section">
+    <h2 class="section__title">Habilidades</h2>
+
+    <div class="skills__container grid--container">
+      <p class="skills__description flex--container">
+        Soy el 'Hechicero de los Loops' y encantador de compiladores, especializado en convertir café en elegantes
+        líneas de JavaScript, robustos HTML y estilizados CSS desde el 2024. Me especializo en decodificar lo
+        indescifrable y transformar ideas vagas en aplicaciones web funcionales, mientras mantengo las pantallas azules
+        a raya con un arsenal de memes y GIFs. Si buscas a alguien que no solo programe, sino que también haga el
+        proceso divertido y haciendo team, has encontrado a tu programador ideal.
+      </p>
+
+      <div class="skills__wrapper flex--container">
+        <div class="skills__cards flex--container">
+          <!--Card 1 -->
+          <details class="skills__cards-container" name="moreInfo" open>
+            <summary class="skills__cards-title flex--container">
+              <i class="bx bxl-html5 flex--container"></i>
+            </summary>
+            <div class="skills__card-container">
+              <h3 class="skills__card-title">HTML</h3>
+
+              <p class="skills__card-description">
+                Con una sólida comprensión de HTML, soy capaz de construir la estructura de sitios web y aplicaciones
+                con una base robusta y accesible. Desde la creación de páginas web interactivas y receptivas hasta la
+                implementación de elementos multimedia avanzados, mi dominio de HTML me permite transformar diseños y
+                conceptos en realidad digital. Priorizo la semántica y la accesibilidad, asegurando que cada proyecto no
+                solo se vea bien, sino que también sea accesible para todos los usuarios, incluyendo aquellos con
+                discapacidades. A través de HTML, establezco el esqueleto de experiencias de usuario que son tanto
+                funcionales como visualmente atractivas, preparando el terreno para estilos avanzados y funcionalidades
+                dinámicas con CSS y JavaScript.
+              </p>
+            </div>
+          </details>
+          <!--Card 2 -->
+          <details class="skills__cards-container" name="moreInfo">
+            <summary class="skills__cards-title flex--container">
+              <i class="bx bxl-css3 flex--container"></i>
+            </summary>
+            <div class="skills__card-container">
+              <h3 class="skills__card-title">CSS3</h3>
+
+              <p class="skills__card-description">
+                En el mundo del diseño web, mi manejo de CSS3 me permite dar vida a las páginas con estilos sofisticados
+                y animaciones interactivas. Con un enfoque en la estética y la funcionalidad, utilizo CSS3 para crear
+                diseños responsivos que se adaptan perfectamente a cualquier tamaño de pantalla, desde teléfonos móviles
+                hasta monitores de escritorio. Mis habilidades en CSS3 también incluyen la implementación de
+                transiciones suaves y efectos visuales que capturan la atención del usuario, elevando la experiencia del
+                usuario a niveles superiores. Mediante el uso avanzado de selectores, flexbox, grid y propiedades de
+                animación, aseguro que cada elemento en la pantalla no solo se vea bien, sino que también funcione de
+                manera óptima para una interactividad fluida y accesible.
+              </p>
+            </div>
+          </details>
+          <!--Card 3 -->
+          <details class="skills__cards-container" name="moreInfo">
+            <summary class="skills__cards-title flex--container">
+              <i class="bx bxl-javascript flex--container"></i>
+            </summary>
+            <div class="skills__card-container">
+              <h3 class="skills__card-title">Javascript</h3>
+
+              <p class="skills__card-description">
+                Con JavaScript, transformo interfaces estáticas en experiencias web ricas y dinámicas. Mis habilidades
+                en JavaScript me permiten implementar funcionalidades interactivas que mejoran significativamente la
+                usabilidad y el engagement de los usuarios. Desde crear aplicaciones web de una sola página (SPA) que
+                cargan contenido sin recargar la página, hasta desarrollar características complejas como carritos de
+                compra interactivos y formularios personalizados, JavaScript es mi herramienta para hacer que las
+                páginas web no solo respondan a las acciones del usuario, sino que también anticipen sus necesidades.
+                Además, con frameworks modernos como React o Vue, puedo construir interfaces altamente reactivas y
+                eficientes, asegurando que cada proyecto no solo cumpla con los estándares modernos de la web, sino que
+                también ofrezca una experiencia sin igual a los usuarios finales.
+
+
+              </p>
+            </div>
+          </details>
+          <!--Card 4 -->
+          <details class="skills__cards-container" name="moreInfo">
+            <summary class="skills__cards-title flex--container">
+              <i class="bx bxl-react flex--container"></i>
+            </summary>
+            <div class="skills__card-container">
+              <h3 class="skills__card-title">React</h3>
+
+              <p class="skills__card-description">
+                Aprovechando el poder de React, desarrollo interfaces de usuario interactivas y de alto rendimiento para
+                aplicaciones web modernas. Mi experiencia con React me permite construir componentes reutilizables y
+                eficientes que gestionan el estado y la lógica de la interfaz de manera elegante, facilitando la
+                mantenibilidad y escalabilidad del código. Me especializo en la creación de aplicaciones de página única
+                (SPA) que ofrecen experiencias fluidas y cohesivas, mimetizando la sensación de una aplicación nativa.
+                Utilizando React, también implemento enrutamiento dinámico, manejo de estado avanzado con Redux o
+                Context API, y optimizo la interacción con APIs para cargar y manipular datos en tiempo real. Estas
+                habilidades me permiten construir desde complejos dashboards administrativos hasta plataformas de
+                comercio electrónico envolventes, asegurando que cada proyecto no solo sea responsivo, sino también
+                accesible y centrado en el usuario.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+      <div class="skills__tags flex--container">
+        <h3 class="skills__tags-title">Habilidades Blandas</h3>
+        <div class="skills__tags-container flex--container">
+          <span class="skills__tag">Responsable</span>
+          <span class="skills__tag">Trabajo en equipo</span>
+          <span class="skills__tag">Creativo</span>
+          <span class="skills__tag">Puntual</span>
+          <span class="skills__tag">Proactivo</span>
+          <span class="skills__tag">Autodidacta</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects section">
+    <h2 class="section__title">Proyectos</h2>
+
+    <div class="projects__container grid--container">
+      <div class="projects__project">
+        <div class="projects__inner grid--container">
+          <div class="projects__image">
+            <img src="assets/img/project1.webp" alt="project 1" title="Ecommerce Vanilla" />
+          </div>
+
+          <div class="projects__info">
+            <h3 class="projects__name">Proyecto 1</h3>
+            <p class="projects__description">
+              Página web de maestro de música
+            </p>
+
+            <div class="projects__buttons">
+              <button class="btn projects__button" type="button">
+                VER DEMO
+              </button>
+              <button class="btn projects__button" type="button">
+                VER CÓDIGO
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects__project">
+        <div class="projects__inner grid--container">
+          <div class="projects__image">
+            <img src="assets/img/project2.webp" alt="project 1" title="Consumiendo API Pokemon con React" />
+          </div>
+
+          <div class="projects__info">
+            <h3 class="projects__name">Proyecto 2</h3>
+            <p class="projects__description">
+              Página web de psicólogo
+            </p>
+
+            <div class="projects__buttons">
+              <button class="btn projects__button" type="button">
+                VER DEMO
+              </button>
+              <button class="btn projects__button" type="button">
+                VER CÓDIGO
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects__project">
+        <div class="projects__inner grid--container">
+          <div class="projects__image">
+            <img src="assets/img/project3.webp" alt="project 1" title="CRUD con React" />
+          </div>
+
+          <div class="projects__info">
+            <h3 class="projects__name">Proyecto 3</h3>
+            <p class="projects__description">
+              Página web de restaurante vegan
+            </p>
+
+            <div class="projects__buttons">
+              <button class="btn projects__button" type="button">
+                VER DEMO
+              </button>
+              <button class="btn projects__button" type="button">
+                VER CÓDIGO
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects__project">
+        <div class="projects__inner grid--container">
+          <div class="projects__image">
+            <img src="assets/img/project4.webp" alt="project 1" title="Aplicación del tiempo con React" />
+          </div>
+
+          <div class="projects__info">
+            <h3 class="projects__name">Proyecto 4</h3>
+            <p class="projects__description">
+              Desarrollo de página web full stack de protección animal
+            </p>
+
+            <div class="projects__buttons">
+              <button class="btn projects__button" type="button">
+                VER DEMO
+              </button>
+              <button class="btn projects__button" type="button">
+                VER CÓDIGO
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact section">
+    <h2 class="section__title">Contacto</h2>
+
+    <div class="contact__container grid--container">
+      <div class="contact__info">
+        <h3 class="contact__info-title">Información de contacto</h3>
+        <p class="contact__info-description">
+          Si estás buscando un trabajo que te posicione en el gran mar de la información y tus clientes se sientan
+          atraídos por tu atractivo digital, contáctame.
+        </p>
+
+        <address class="contact__info-data">
+          <div class="contact__info-item">
+            <i class="bx bxl-whatsapp"></i>
+
+            <span class="contact__info-number">
+              <a href="https://wa.me/0000000000000?text=Tu%20Mensaje%20De%20Texto" target="_blank"
+                rel="noreferrer nofollow">Enviar mensaje a WhatsApp</a>
+            </span>
+          </div>
+
+          <div class="contact__info-item">
+            <i class="bx bx-phone"></i>
+
+            <span class="contact__info-number">
+              <a href="tel:1-234-567-8910" target="_blank" rel="noreferrer nofollow">
+                +1 123 456 7890
+              </a>
+            </span>
+          </div>
+
+          <div class="contact__info-item">
+            <i class="bx bxs-envelope"></i>
+
+            <span class="contact__info-mail">
+              <a id="mail" href="mailto:test@correo.com" target="_blank" rel="noreferrer nofollow">
+                test@correo.com
+              </a>
+            </span>
+          </div>
+
+          <div class="contact__info-item">
+            <i class="bx bx-map"></i>
+
+            <span class="contact__info-map"> Bogotá, Colombia. </span>
+          </div>
+        </address>
+      </div>
+      <div class="contact__form">
+        <h3 class="contact__form-title">Enviar mensaje</h3>
+
+        <form id="form" class="contact__form-container">
+          <div class="contact__form-group">
+            <label for="name" class="contact__form-label">Nombre</label>
+            <input type="text" id="name" name="name" class="contact__form-input" />
+          </div>
+
+          <div class="contact__form-group">
+            <label for="email" class="contact__form-label">Correo</label>
+            <input type="email" id="email" name="email" class="contact__form-input" />
+          </div>
+
+          <div class="contact__form-group">
+            <label for="subject" class="contact__form-label">Asunto</label>
+            <input type="text" id="subject" name="subject" class="contact__form-input" />
+          </div>
+
+          <div class="contact__form-group">
+            <label for="message" class="contact__form-label">Mensaje</label>
+            <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
+          </div>
+          <dialog class="contact__form-modal" id="modal">
+            Formulario enviado con éxito!
+            <button type="reset" id="btn_close-modal">Cerrar</button>
+          </dialog>
+
+          <button type="submit" class="btn contact__form-button">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer section">
+    <div class="footer__container grid--container">
+      <div class="footer__info">
+        <h3 class="footer__title">Mario Gallardo</h3>
+        <p class="footer__description">
+          Soy desarrollador web, creativo, espontaneo, abierto a la innovación, propósitivo.
+        </p>
+      </div>
+
+      <div class="footer__social">
+        <h3 class="footer__title">Redes Sociales</h3>
+
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-facebook"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-instagram"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-twitter"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copy"></p>
+  </footer>
+
+  <script src="assets/js/components/parallax.js"></script>
+  <script src="assets/js/components/imagefects.js"></script>
+  <script src="assets/js/components/justified.js"></script>
+  <script src="assets/js/components/home.js"></script>
+  <script src="assets/js/components/changelenguages.js"></script>
+
+
+
+</body>
+
+
+</html>
